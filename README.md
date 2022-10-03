@@ -21,7 +21,7 @@ Requires:
 
 `--phrase` enter the phrase you wish to be encrypted/decrypted  
 
-`--key` an optional argument that allows you to randomize the encryption process. *Only works with the Playfair and Substitution ciphers*  
+`--key` an optional argument that allows you to randomize the encryption process. \**Only works with the Playfair and Substitution ciphers*  
 
 `python crypto.py --mode encrypt --cipher playfair --phrase "It was a dark and stormy night." --key CUI`  
 
