@@ -1,5 +1,6 @@
 # Playfair
-Project that utilizes the Playfair cypher for encryption/decryption purposes.
+Project that utilizes the Playfair cypher for encryption/decryption purposes.  
+Additional cyphers such as the Rail Fence Cipher and Substitution Cipher can also be utilized to encrypt and decrypt a phrase.
 
 # Files
 * playfair.py 
@@ -14,7 +15,17 @@ Requires:
 * argparse module
 
 ## Usage
-`python crypto.py --mode encrypt --cipher playfair --phrase "It was a dark and stormy night."`
+`--mode` choose between `encrypt` or `decrypt`  
+
+`--cipher` choose `playfair` `railfence` or `substitution` as an encryption/decryption method.  
+
+`--phrase` enter the phrase you wish to be encrypted/decrypted  
+
+`--key` an optional argument that allows you to randomize the encryption process. *Only works with the playfair and substitution ciphers*  
+
+`python crypto.py --mode encrypt --cipher playfair --phrase "It was a dark and stormy night." --key CUI`  
+
+`python crypto.py --mode decrypt --cipher playfair --phrase "BRYUYGGCPMGSGPZTXRASAFOZ" --key CUI`  
 
 ## Cipher Rules
 ### Playfair Cipher
@@ -31,9 +42,7 @@ To encrypt a message using the playfair cipher, a phrase is broken into digrams 
 
 #### Decryption
 To decrypt, use the inverse (opposite) of the two shift rules, selecting the letter to the left or upwards as appropriate. The last rule remains unchanged, as the transformation switches the selected letters of the rectangle to the opposite diagonal, and a repeat of the transformation returns the selection to its original state. 
-### Railroad Cipher
-
+### Rail Fence Cipher
+The Rail Fence Cipher utilizes the even and odd indexed letters of a phrase to encrypt a message. All of the letters at the even indexes of the phrase are combined into a string, then a string of all of the odd index letters of the phrase is created. These 2 strings are then combined into a larger string, with the result being an encrypted message. 
 ### Substitution Cipher
-## Testing 
-Call the playfair cipher file using console and for the arguements with encryption type in a message,
-for decryption type in the encrypted message and you will get the original.
+This substitution cipher utilizes a 26 character key that will swap out all occurences of one letter for another. i.e. all instances of the letter `a` in a phrase will be replaced with the letter `e`
