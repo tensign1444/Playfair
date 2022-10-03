@@ -17,7 +17,7 @@ Requires:
 ## Usage
 `--mode` choose between `encrypt` or `decrypt`  
 
-`--cipher` choose `playfair` `railfence` or `substitution` as an encryption/decryption method.  
+`--cipher` choose `playfair`, `railfence` or `substitution` as an encryption/decryption method.  
 
 `--phrase` enter the phrase you wish to be encrypted/decrypted  
 
