@@ -18,7 +18,7 @@ Requires:
 
 ## Cipher Rules
 ### Playfair Cipher
-The Playfair cipher uses a 5 by 5 table containing a key word or phrase.
+The Playfair cipher utilizes a 5x5 table containing every letter of the alphabet except 'J'. 
 
 #### Encryption
 To encrypt a message using the playfair cipher, a phrase is broken into digrams (groups of 2 letters) If there is a letter left over, a 'Q' will be appended onto the phrase i.e. CONCORDIA = CO NC OR DI AQ. The two letters of the digram are considered opposite corners of a rectangle in the key table. To perform the substitution, apply the following 4 rules, in order, to each pair of letters in the plaintext:
@@ -32,6 +32,7 @@ To encrypt a message using the playfair cipher, a phrase is broken into digrams 
 #### Decryption
 To decrypt, use the inverse (opposite) of the two shift rules, selecting the letter to the left or upwards as appropriate. The last rule remains unchanged, as the transformation switches the selected letters of the rectangle to the opposite diagonal, and a repeat of the transformation returns the selection to its original state. 
 ### Railroad Cipher
+
 ### Substitution Cipher
 ## Testing 
 Call the playfair cipher file using console and for the arguements with encryption type in a message,
