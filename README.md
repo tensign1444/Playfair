@@ -1,12 +1,17 @@
 # Playfair
-Project that utilizes the Playfair cypher for encryption/encryption purposes
+Project that utilizes the Playfair cypher for encryption/decryption purposes.
 
 # Files
-Playfair.py, substitution.py, railfence.py
+playfair.py 
+substitution.py
+railfence.py
+crypto.py
 
 
 ## Version
-Requires Python3 and argparse module as well as files listed above to function appropriately 
+Requires:
+ Markup : * python3
+          * argparse module
 
 ## Usage
 Use console and pass in strings to encrypt and decrypt methods using the select functions for their respective uses
