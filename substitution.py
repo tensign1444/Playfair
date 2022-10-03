@@ -6,7 +6,7 @@ Created on Fri Sep 23 16:59:11 2022
 """
 class Substitution:
         
-    def __init__(self, key):
+    def __init__(self, key=" zyxwvutsrqponmlkjihgfedcba"):
         self.key = key
         
     def encrypt(self, plaintext):
@@ -27,6 +27,7 @@ class Substitution:
         return plaintext
         
 if __name__ == '__main__':
-    substitution = Substitution(" zyxwvutsrqponmlkjihgfedcba")
+    substitution = Substitution()
     print(substitution.encrypt('I THINK coding is fun'))
     print(substitution.decrypt('sahtsnqaymxsnuasiavgn'))
+
