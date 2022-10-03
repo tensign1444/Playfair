@@ -10,8 +10,8 @@ crypto.py
 
 ## Version
 Requires:
- Markup : * python3
-          * argparse module
+* python3
+* argparse module
 
 ## Usage
 Use console and pass in strings to encrypt and decrypt methods using the select functions for their respective uses
