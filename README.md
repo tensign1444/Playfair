@@ -1,6 +1,6 @@
 # Playfair
-Project that utilizes the *Playfair Cypher* for encryption/decryption purposes.  
-Additional cyphers such as the *Rail Fence Cipher* and *Substitution Cipher* can also be utilized to encrypt and decrypt a phrase.
+Project that utilizes the **Playfair Cypher** for encryption/decryption purposes.  
+Additional cyphers such as the **Rail Fence Cipher** and **Substitution Cipher** can also be utilized to encrypt and decrypt a phrase.
 
 # Files
 * playfair.py 
