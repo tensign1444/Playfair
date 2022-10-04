@@ -42,7 +42,7 @@ To encrypt a message using the Playfair Cipher, a phrase is broken into 2 letter
 ![cipher example](https://user-images.githubusercontent.com/65187208/193516460-6d65f212-c40a-46c7-8562-a156ab7f4e3e.png)
 
 #### Decryption
-To decrypt, use the inverse of the two shift rules, selecting the letter to the left or upwards as appropriate. The last rule remains unchanged, as the transformation switches the selected letters of the rectangle to the opposite diagonal, and a repeat of the transformation returns the selection to its original state. 
+To decrypt, use the inverse of the two shift rules, selecting the letter to the left or upwards as appropriate. The last rule remains unchanged, as the transformation switches the selected letters of the rectangle to the opposite diagonal, and a repeat of the transformation returns the selection to its original state.  
 *Taken from [Wikipedia](https://en.wikipedia.org/wiki/Playfair_cipher)
 ### Rail Fence Cipher
 The Rail Fence Cipher utilizes the even and odd indexed letters of a phrase to encrypt a message. All of the letters at the even indexes of the phrase are combined into a string. Following this, a string of all of the odd index letters of the phrase is created. These 2 strings are then merged, with the string made up of even indexes appearing first.
