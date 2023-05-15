@@ -17,15 +17,15 @@ Requires:
 ## Usage
 `--mode` choose between `encrypt` or `decrypt`  
 
-`--cipher` choose `playfair`, `railfence` or `substitution` as an encryption/decryption method.  
+`--Cypher` choose `playfair`, `railfence` or `substitution` as an encryption/decryption method.  
 
 `--phrase` enter the phrase you wish to be encrypted/decrypted  
 
-`--key` an optional argument that allows you to randomize the encryption process. \**Only works with the Playfair and Substitution ciphers*  
+`--key` an optional argument that allows you to randomize the encryption process. \**Only works with the Playfair and Substitution Cypher*  
 
-`python crypto.py --mode encrypt --cipher playfair --phrase "It was a dark and stormy night." --key CUI`  
+`python crypto.py --mode encrypt --Cypher playfair --phrase "It was a dark and stormy night." --key CUI`  
 
-`python crypto.py --mode decrypt --cipher playfair --phrase "BRYUYGGCPMGSGPZTXRASAFOZ" --key CUI`  
+`python crypto.py --mode decrypt --Cypher playfair --phrase "BRYUYGGCPMGSGPZTXRASAFOZ" --key CUI`  
 
 ## Cypher Rules
 ### Playfair Cypher
@@ -39,7 +39,7 @@ To encrypt a message using the Playfair Cypher, a phrase is broken into 2 letter
 2. If the letters appear on the same row of your table, replace them with the letters to their immediate right (wrap around the row if necessary).
 3. If the letters appear on the same column of your table, replace them with the letters immediately below respectively (wrap around the column if necessary).
 4. If the letters are not on the same row or column, replace them with the letters on the same row respectively but at the other pair of corners of the rectangle defined by the original pair.  
-![cipher example](https://user-images.githubusercontent.com/65187208/193516460-6d65f212-c40a-46c7-8562-a156ab7f4e3e.png)
+![Cypher example](https://user-images.githubusercontent.com/65187208/193516460-6d65f212-c40a-46c7-8562-a156ab7f4e3e.png)
 
 #### Decryption
 To decrypt, use the inverse of the two shift rules, selecting the letter to the left or upwards as appropriate. The last rule remains unchanged, as the transformation switches the selected letters of the rectangle to the opposite diagonal, and a repeat of the transformation returns the selection to its original state.  
