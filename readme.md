@@ -1,6 +1,6 @@
 # Playfair
 Project that utilizes the **Playfair Cypher** for encryption/decryption purposes.  
-Additional cyphers such as the **Rail Fence Cipher** and **Substitution Cipher** can also be utilized to encrypt and decrypt a phrase.
+Additional cyphers such as the **Rail Fence Cypher** and **Substitution Cypher** can also be utilized to encrypt and decrypt a phrase.
 
 # Files
 * playfair.py 
@@ -27,12 +27,12 @@ Requires:
 
 `python crypto.py --mode decrypt --cipher playfair --phrase "BRYUYGGCPMGSGPZTXRASAFOZ" --key CUI`  
 
-## Cipher Rules
-### Playfair Cipher
-The Playfair Cipher utilizes a 5x5 table containing every letter of the alphabet except 'J'. 
+## Cypher Rules
+### Playfair Cypher
+The Playfair Cypher utilizes a 5x5 table containing every letter of the alphabet except 'J'. 
 
 #### Encryption
-To encrypt a message using the Playfair Cipher, a phrase is broken into 2 letter digrams. If there is a letter left over, a 'Q' will be appended onto the phrase i.e. CONCORDIA = CO NC OR DI AQ. The two letters of the digram are considered opposite corners of a rectangle in the key table. To perform the substitution, apply the following 4 rules to each pair of letters in the phrase:
+To encrypt a message using the Playfair Cypher, a phrase is broken into 2 letter digrams. If there is a letter left over, a 'Q' will be appended onto the phrase i.e. CONCORDIA = CO NC OR DI AQ. The two letters of the digram are considered opposite corners of a rectangle in the key table. To perform the substitution, apply the following 4 rules to each pair of letters in the phrase:
 
 
 1. If both letters are the same (or only one letter is left), add a 'Q' after the first letter. Encrypt the new pair and continue.
@@ -44,8 +44,8 @@ To encrypt a message using the Playfair Cipher, a phrase is broken into 2 letter
 #### Decryption
 To decrypt, use the inverse of the two shift rules, selecting the letter to the left or upwards as appropriate. The last rule remains unchanged, as the transformation switches the selected letters of the rectangle to the opposite diagonal, and a repeat of the transformation returns the selection to its original state.  
 *Source* [Wikipedia](https://en.wikipedia.org/wiki/Playfair_cipher)
-### Rail Fence Cipher
-The Rail Fence Cipher utilizes the even and odd indexed letters of a phrase to encrypt a message. All of the letters at the even indexes of the phrase are combined into a string. Following this, a string of all of the odd index letters of the phrase is created. These 2 strings are then merged, with the string made up of even indexes appearing first.
-### Substitution Cipher
-This Substitution Cipher utilizes a 26 character key containing every letter of the alphabet (and a space character) that will swap out all occurrences of one letter for another i.e. all instances of the letter `a` in a phrase will be replaced with the letter `e`.  
+### Rail Fence Cypher
+The Rail Fence Cypher utilizes the even and odd indexed letters of a phrase to encrypt a message. All of the letters at the even indexes of the phrase are combined into a string. Following this, a string of all of the odd index letters of the phrase is created. These 2 strings are then merged, with the string made up of even indexes appearing first.
+### Substitution Cypher
+This Substitution Cypher utilizes a 26 character key containing every letter of the alphabet (and a space character) that will swap out all occurrences of one letter for another i.e. all instances of the letter `a` in a phrase will be replaced with the letter `e`.  
 
